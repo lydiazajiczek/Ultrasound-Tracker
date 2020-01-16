@@ -1,0 +1,21 @@
+﻿  Transform.cpp
+  ToolData.cpp
+  TcpConnection.cpp
+  SystemCRC.cpp
+  SystemAlert.cpp
+  MarkerData.cpp
+  PortHandleInfo.cpp
+  GbfSystemAlert.cpp
+  GbfFrame.cpp
+  GbfData6D.cpp
+  GbfData3D.cpp
+  GbfContainer.cpp
+  GbfComponent.cpp
+  GbfButton1D.cpp
+  ComConnection.cpp
+  CombinedApi.cpp
+  BufferedReader.cpp
+  Generating Code...
+     Creating library C:\Users\lydia\OD\Documents\Code\Ultrasound Tracker\WEISS-Ultrasound-Frame-Grabber\Aurora\x64\Debug\library.lib and object C:\Users\lydia\OD\Documents\Code\Ultrasound Tracker\WEISS-Ultrasound-Frame-Grabber\Aurora\x64\Debug\library.exp
+  library.vcxproj -> C:\Users\lydia\OD\Documents\Code\Ultrasound Tracker\WEISS-Ultrasound-Frame-Grabber\Aurora\x64\Debug\library.dll
+  library.vcxproj -> C:\Users\lydia\OD\Documents\Code\Ultrasound Tracker\WEISS-Ultrasound-Frame-Grabber\Aurora\x64\Debug\library.pdb (Full PDB)

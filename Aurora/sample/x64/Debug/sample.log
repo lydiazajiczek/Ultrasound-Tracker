@@ -1,0 +1,7 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (sample.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+c:\users\lydia\od\documents\code\ultrasound tracker\weiss-ultrasound-frame-grabber\aurora\sample\src\main.cpp(181): warning C4244: 'argument': conversion from 'uintptr_t' to 'DWORD', possible loss of data
+c:\users\lydia\od\documents\code\ultrasound tracker\weiss-ultrasound-frame-grabber\aurora\sample\src\main.cpp(391): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+c:\users\lydia\od\documents\code\ultrasound tracker\weiss-ultrasound-frame-grabber\aurora\sample\src\main.cpp(395): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+  sample.vcxproj -> C:\Users\lydia\OD\Documents\Code\Ultrasound Tracker\WEISS-Ultrasound-Frame-Grabber\Aurora\x64\Debug\AuroraTracker.exe
+  sample.vcxproj -> C:\Users\lydia\OD\Documents\Code\Ultrasound Tracker\WEISS-Ultrasound-Frame-Grabber\Aurora\x64\Debug\AuroraTracker.pdb (Full PDB)
