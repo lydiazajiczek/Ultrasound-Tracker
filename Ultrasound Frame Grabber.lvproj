@@ -10,7 +10,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="WEISS-Ultrasound-Frame-Grabber" Type="Folder" URL="..">
+		<Item Name="WEISS-Ultrasound-Tracker" Type="Folder" URL="..">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -102,6 +102,19 @@
 				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="Clear Crop ROI.vi" Type="VI" URL="../LabVIEW/Utilities/archive/Clear Crop ROI.vi"/>
+			<Item Name="Clear Crop ROI.vi" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Utilities/Clear Crop ROI.vi"/>
+			<Item Name="Close AuroraTracker.vi" Type="VI" URL="../LabVIEW/Utilities/test benches/Close AuroraTracker.vi"/>
+			<Item Name="Close COM Port.vi" Type="VI" URL="../LabVIEW/Utilities/test benches/Close COM Port.vi"/>
+			<Item Name="Close Motive and PacketClient.vi" Type="VI" URL="../LabVIEW/Utilities/test benches/Close Motive and PacketClient.vi"/>
+			<Item Name="COM Port Handshake.vi" Type="VI" URL="../LabVIEW/Utilities/test benches/COM Port Handshake.vi"/>
+			<Item Name="Configure Crop.vi" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Configure Crop.vi"/>
+			<Item Name="Create 3D Shapes.vi" Type="VI" URL="../LabVIEW/Utilities/test benches/Create 3D Shapes.vi"/>
+			<Item Name="Crop Video State.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Crop Video State.ctl"/>
+			<Item Name="Dimensions.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Dimensions.ctl"/>
+			<Item Name="Dimensions.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Dimensions.ctl"/>
+			<Item Name="Frame Grabber Data.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Frame Grabber Data.ctl"/>
+			<Item Name="Frame Grabber Data.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Frame Grabber Data.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="niimaqdx.dll" Type="Document" URL="niimaqdx.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -112,6 +125,35 @@
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Open COM Port.vi" Type="VI" URL="../LabVIEW/Utilities/test benches/Open COM Port.vi"/>
+			<Item Name="Open Playback Files Cropping.vi" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Open Playback Files Cropping.vi"/>
+			<Item Name="Operator Settings.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Operator Settings.ctl"/>
+			<Item Name="Operator Settings.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Operator Settings.ctl"/>
+			<Item Name="Operator.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Operator.ctl"/>
+			<Item Name="Operator.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Operator.ctl"/>
+			<Item Name="Orientation.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Orientation.ctl"/>
+			<Item Name="Orientation.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Orientation.ctl"/>
+			<Item Name="Packet Data.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Packet Data.ctl"/>
+			<Item Name="Playback Frame Cropping.vi" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Playback Frame Cropping.vi"/>
+			<Item Name="Position.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Position.ctl"/>
+			<Item Name="Position.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Position.ctl"/>
+			<Item Name="Probe Dimensions.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Probe Dimensions.ctl"/>
+			<Item Name="Read Rigid Body Data Motive.vi" Type="VI" URL="../LabVIEW/Utilities/Read Rigid Body Data Motive.vi"/>
+			<Item Name="Record Frame Crop.vi" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Record Frame Crop.vi"/>
+			<Item Name="Recording Settings.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Recording Settings.ctl"/>
+			<Item Name="Recording Settings.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Recording Settings.ctl"/>
+			<Item Name="Refnums.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Refnums.ctl"/>
+			<Item Name="Refnums.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Refnums.ctl"/>
+			<Item Name="Rigid Body Info.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Rigid Body Info.ctl"/>
+			<Item Name="Rigid Body Info.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Rigid Body Info.ctl"/>
+			<Item Name="Room Dimensions.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Room Dimensions.ctl"/>
+			<Item Name="Room Dimensions.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Room Dimensions.ctl"/>
+			<Item Name="Set Crop ROI.vi" Type="VI" URL="../LabVIEW/Utilities/archive/Set Crop ROI.vi"/>
+			<Item Name="Set Crop ROI.vi" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Utilities/Set Crop ROI.vi"/>
+			<Item Name="Start AuroraTracker.vi" Type="VI" URL="../LabVIEW/Utilities/test benches/Start AuroraTracker.vi"/>
+			<Item Name="Start Motive and PacketClient.vi" Type="VI" URL="../LabVIEW/Utilities/test benches/Start Motive and PacketClient.vi"/>
+			<Item Name="Tracker Type.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Tracker Type.ctl"/>
+			<Item Name="Tracking Data.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Tracking Data.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
