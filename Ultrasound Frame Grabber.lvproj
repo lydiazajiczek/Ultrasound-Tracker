@@ -15,6 +15,8 @@
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
+				<Item Name="AddNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/AddNamedSemaphorePrefix.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
@@ -42,9 +44,9 @@
 				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
+				<Item Name="GetNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/GetNamedSemaphorePrefix.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
 				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
-				<Item Name="Image Unit" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Unit"/>
 				<Item Name="IMAQ AVI2 Close" Type="VI" URL="/&lt;vilib&gt;/vision/Avi.llb/IMAQ AVI2 Close"/>
 				<Item Name="IMAQ AVI2 Codec Path.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Avi.llb/IMAQ AVI2 Codec Path.ctl"/>
 				<Item Name="IMAQ AVI2 Create" Type="VI" URL="/&lt;vilib&gt;/vision/Avi.llb/IMAQ AVI2 Create"/>
@@ -59,7 +61,6 @@
 				<Item Name="IMAQ Copy" Type="VI" URL="/&lt;vilib&gt;/vision/Management.llb/IMAQ Copy"/>
 				<Item Name="IMAQ Create" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Create"/>
 				<Item Name="IMAQ Dispose" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Dispose"/>
-				<Item Name="IMAQ GetImageInfo" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ GetImageInfo"/>
 				<Item Name="IMAQ GetImageSize" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ GetImageSize"/>
 				<Item Name="IMAQ Image.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Image.ctl"/>
 				<Item Name="IMAQ Rectangle" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Rectangle"/>
@@ -79,7 +80,9 @@
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="NI_Vision_Acquisition_Software.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/driver/NI_Vision_Acquisition_Software.lvlib"/>
 				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
+				<Item Name="Not A Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Not A Semaphore.vi"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="Obtain Semaphore Reference.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Obtain Semaphore Reference.vi"/>
 				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
 				<Item Name="Read Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (DBL).vi"/>
 				<Item Name="Read Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (I64).vi"/>
@@ -87,8 +90,13 @@
 				<Item Name="Read Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet.vi"/>
 				<Item Name="Read File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read File+ (string).vi"/>
 				<Item Name="Read Lines From File (with error IO).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File (with error IO).vi"/>
+				<Item Name="Release Semaphore Reference.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Release Semaphore Reference.vi"/>
+				<Item Name="Release Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Release Semaphore.vi"/>
+				<Item Name="RemoveNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/RemoveNamedSemaphorePrefix.vi"/>
 				<Item Name="ROI Descriptor" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/ROI Descriptor"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
+				<Item Name="Semaphore RefNum" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Semaphore RefNum"/>
+				<Item Name="Semaphore Refnum Core.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Semaphore Refnum Core.ctl"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
@@ -99,24 +107,12 @@
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="Validate Semaphore Size.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Validate Semaphore Size.vi"/>
 				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
 				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
 				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="Clear Crop ROI.vi" Type="VI" URL="../LabVIEW/Utilities/archive/Clear Crop ROI.vi"/>
-			<Item Name="Clear Crop ROI.vi" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Utilities/Clear Crop ROI.vi"/>
-			<Item Name="Close AuroraTracker.vi" Type="VI" URL="../LabVIEW/Utilities/test benches/Close AuroraTracker.vi"/>
-			<Item Name="Close COM Port.vi" Type="VI" URL="../LabVIEW/Utilities/test benches/Close COM Port.vi"/>
-			<Item Name="Close Motive and PacketClient.vi" Type="VI" URL="../LabVIEW/Utilities/test benches/Close Motive and PacketClient.vi"/>
-			<Item Name="COM Port Handshake.vi" Type="VI" URL="../LabVIEW/Utilities/test benches/COM Port Handshake.vi"/>
-			<Item Name="Configure Crop.vi" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Configure Crop.vi"/>
-			<Item Name="Create 3D Shapes.vi" Type="VI" URL="../LabVIEW/Utilities/test benches/Create 3D Shapes.vi"/>
-			<Item Name="Crop Video State.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Crop Video State.ctl"/>
-			<Item Name="Dimensions.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Dimensions.ctl"/>
-			<Item Name="Dimensions.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Dimensions.ctl"/>
-			<Item Name="Frame Grabber Data.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Frame Grabber Data.ctl"/>
-			<Item Name="Frame Grabber Data.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Frame Grabber Data.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="niimaqdx.dll" Type="Document" URL="niimaqdx.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -127,35 +123,6 @@
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Open COM Port.vi" Type="VI" URL="../LabVIEW/Utilities/test benches/Open COM Port.vi"/>
-			<Item Name="Open Playback Files Cropping.vi" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Open Playback Files Cropping.vi"/>
-			<Item Name="Operator Settings.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Operator Settings.ctl"/>
-			<Item Name="Operator Settings.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Operator Settings.ctl"/>
-			<Item Name="Operator.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Operator.ctl"/>
-			<Item Name="Operator.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Operator.ctl"/>
-			<Item Name="Orientation.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Orientation.ctl"/>
-			<Item Name="Orientation.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Orientation.ctl"/>
-			<Item Name="Packet Data.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Packet Data.ctl"/>
-			<Item Name="Playback Frame Cropping.vi" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Playback Frame Cropping.vi"/>
-			<Item Name="Position.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Position.ctl"/>
-			<Item Name="Position.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Position.ctl"/>
-			<Item Name="Probe Dimensions.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Probe Dimensions.ctl"/>
-			<Item Name="Read Rigid Body Data Motive.vi" Type="VI" URL="../LabVIEW/Utilities/Read Rigid Body Data Motive.vi"/>
-			<Item Name="Record Frame Crop.vi" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Record Frame Crop.vi"/>
-			<Item Name="Recording Settings.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Recording Settings.ctl"/>
-			<Item Name="Recording Settings.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Recording Settings.ctl"/>
-			<Item Name="Refnums.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Refnums.ctl"/>
-			<Item Name="Refnums.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Refnums.ctl"/>
-			<Item Name="Rigid Body Info.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Rigid Body Info.ctl"/>
-			<Item Name="Rigid Body Info.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Rigid Body Info.ctl"/>
-			<Item Name="Room Dimensions.ctl" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Controls/Room Dimensions.ctl"/>
-			<Item Name="Room Dimensions.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Room Dimensions.ctl"/>
-			<Item Name="Set Crop ROI.vi" Type="VI" URL="../LabVIEW/Utilities/archive/Set Crop ROI.vi"/>
-			<Item Name="Set Crop ROI.vi" Type="VI" URL="../LabVIEW/Utilities/archive/LabVIEW/Utilities/Set Crop ROI.vi"/>
-			<Item Name="Start AuroraTracker.vi" Type="VI" URL="../LabVIEW/Utilities/test benches/Start AuroraTracker.vi"/>
-			<Item Name="Start Motive and PacketClient.vi" Type="VI" URL="../LabVIEW/Utilities/test benches/Start Motive and PacketClient.vi"/>
-			<Item Name="Tracker Type.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Tracker Type.ctl"/>
-			<Item Name="Tracking Data.ctl" Type="VI" URL="../LabVIEW/Utilities/Controls/Tracking Data.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

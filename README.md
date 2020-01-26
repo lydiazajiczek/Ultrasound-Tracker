@@ -1,5 +1,12 @@
 # WEISS Ultrasound Tracker
-LabVIEW program and compiled C++ executables that save ultrasound images captured from an Epiphan frame grabber as .avi files with synchronized probe position and orientation (6 DoF) in a corresponding .csv file. Using different tracking/video framerates is possible. Probe orientation is visualized in 3D, and previous datasets can be played back.
+LabVIEW data recorder program and compiled C++ executables that save ultrasound images captured from an Epiphan frame grabber as .avi files with synchronized probe position and orientation (6 DoF) captured by Aurora or OptiTrack in a corresponding .csv file. Using different tracking/video framerates is possible. Probe orientation is visualized in 3D, and previous datasets can be played back. Also contains a utility for cropping datasets either in time or by image size.
+
+## Known Issues
+- Reverse playback results in slower playback rate due to an inherent bug in the way .avi files are read by LabVIEW (I expect it has something to do with how the next frame is buffered). A similar lag is observed after a large jump in frame number.
+- Only integer values of video frame rates are allowed.
+- The software assumes the tracker frame rate will always be greater than or equal to the video frame rate.
+- Dragging the frame slider occasionally results in the change not being registered or only partially. Clicking the slider is better.
+- Typing the frame number during playback in the crop utility does not register for some reason, but it works in the data recorder. This is under investigation.
 
 ## Installation
 1. Run Setup_com0com.exe as an administrator and allow installation to finish.
