@@ -104,10 +104,11 @@ void getTrackingData(HANDLE serialHandle)
 		char *ptr_out = comBuff;
 		i = reinterpret_cast<std::uintptr_t>(ptr_out);
 		std::vector<ToolData> toolData = capi.getTrackingDataBX();
+		//std::cout << toolData.size() << std::endl;
 
 		//compatibility with OptiTrack tracking program
-		int frameNumber = 123; 
-		int numRigidBodies = 1;
+		int frameNumber = 123;
+		int numRigidBodies = toolData.size();
 		int bodyID = 42;
 		float x = 0.0f;
 		float y = 0.0f;
@@ -119,18 +120,6 @@ void getTrackingData(HANDLE serialHandle)
 		bool isTracked = 0;
 		double timeStamp = 0.0f;
 
-		if (!toolData[0].transform.isMissing())
-		{
-			x = toolData[0].transform.tx;
-			y = toolData[0].transform.ty;
-			z = toolData[0].transform.tz;
-			qx = toolData[0].transform.qx;
-			qy = toolData[0].transform.qy;
-			qz = toolData[0].transform.qz;
-			q0 = toolData[0].transform.q0;
-			isTracked = 1;
-		}
-
 		//format into fixed length binary string that labview can read
 		memcpy(ptr_out, &frameNumber, 4);
 		ptr_out += 4;
@@ -138,29 +127,80 @@ void getTrackingData(HANDLE serialHandle)
 		ptr_out += 4;
 		memcpy(ptr_out, &bodyID, 4);
 		ptr_out += 4;
-		memcpy(ptr_out, &x, 4); 
-		ptr_out += 4;
-		memcpy(ptr_out, &y, 4);
-		ptr_out += 4;
-		memcpy(ptr_out, &z, 4);
-		ptr_out += 4;
-		memcpy(ptr_out, &qx, 4);
-		ptr_out += 4;
-		memcpy(ptr_out, &qy, 4);
-		ptr_out += 4;
-		memcpy(ptr_out, &qz, 4);
-		ptr_out += 4;
-		memcpy(ptr_out, &q0, 4);
-		ptr_out += 4;
-		memcpy(ptr_out, &isTracked, 2);
-		ptr_out += 2;
+		for (int i = 0; i < toolData.size(); i++)
+		{
+			if (!toolData[i].transform.isMissing())
+			{
+				x = toolData[i].transform.tx;
+				y = toolData[i].transform.ty;
+				z = toolData[i].transform.tz;
+				qx = toolData[i].transform.qx;
+				qy = toolData[i].transform.qy;
+				qz = toolData[i].transform.qz;
+				q0 = toolData[i].transform.q0;
+				isTracked = 1;
+			}
+			else {
+				x = 0;
+				y = 0;
+				z = 0;
+				qx = 0;
+				qy = 0;
+				qz = 0;
+				q0 = 1;
+				isTracked = 0;
+			}
+			memcpy(ptr_out, &x, 4);
+			ptr_out += 4;
+			memcpy(ptr_out, &y, 4);
+			ptr_out += 4;
+			memcpy(ptr_out, &z, 4);
+			ptr_out += 4;
+			memcpy(ptr_out, &qx, 4);
+			ptr_out += 4;
+			memcpy(ptr_out, &qy, 4);
+			ptr_out += 4;
+			memcpy(ptr_out, &qz, 4);
+			ptr_out += 4;
+			memcpy(ptr_out, &q0, 4);
+			ptr_out += 4;
+			memcpy(ptr_out, &isTracked, 2);
+			ptr_out += 2;
+		}
+
+		//format into fixed length binary string that labview can read
+		//memcpy(ptr_out, &frameNumber, 4);
+		//ptr_out += 4;
+		//memcpy(ptr_out, &numRigidBodies, 4);
+		//ptr_out += 4;
+		//for (int i = 0; i < toolData.size(); i++)
+		//{
+		//	memcpy(ptr_out, &bodyID, 4);
+		//	ptr_out += 4;
+		//	memcpy(ptr_out, &x, 4);
+		//	ptr_out += 4;
+		//	memcpy(ptr_out, &y, 4);
+		//	ptr_out += 4;
+		//	memcpy(ptr_out, &z, 4);
+		//	ptr_out += 4;
+		//	memcpy(ptr_out, &qx, 4);
+		//	ptr_out += 4;
+		//	memcpy(ptr_out, &qy, 4);
+		//	ptr_out += 4;
+		//	memcpy(ptr_out, &qz, 4);
+		//	ptr_out += 4;
+		//	memcpy(ptr_out, &q0, 4);
+		//	ptr_out += 4;
+		//	memcpy(ptr_out, &isTracked, 2);
+		//	ptr_out += 2;
+		//}
 		memcpy(ptr_out, &timeStamp, 8);
 		ptr_out += 8;
 
 		f = reinterpret_cast<std::uintptr_t>(ptr_out);
 		auto numBytes = f - i;
 		//std::cout << frameNumber << "," << numRigidBodies << "," << frameID << "," << x << "," << y << "," << z << "," << qx << "," << qy << "," << qz << "," << q0 << "," << isTracked << "," << timeStamp << std::endl;
-		//std::cout << "bytes written: " << numBytes << std::endl;
+		std::cout << "bytes written: " << numBytes << std::endl;
 		if (!WriteFile(serialHandle, comBuff, numBytes, &dwBytesWritten, NULL)) {
 			std::cerr << "Error! Could not write to COM1 :(" << std::endl;
 		}
@@ -178,6 +218,7 @@ void initializeAndEnableTools()
 	std::vector<PortHandleInfo> portHandles = capi.portHandleSearchRequest(PortHandleSearchRequestOption::NotInit);
 	for (int i = 0; i < portHandles.size(); i++)
 	{
+		std::cout << i << std::endl;
 		onErrorPrintDebugMessage("capi.portHandleInitialize()", capi.portHandleInitialize(portHandles[i].getPortHandle()));
 		onErrorPrintDebugMessage("capi.portHandleEnable()", capi.portHandleEnable(portHandles[i].getPortHandle()));
 	}
