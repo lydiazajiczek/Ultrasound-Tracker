@@ -200,7 +200,7 @@ void getTrackingData(HANDLE serialHandle)
 		f = reinterpret_cast<std::uintptr_t>(ptr_out);
 		auto numBytes = f - i;
 		//std::cout << frameNumber << "," << numRigidBodies << "," << frameID << "," << x << "," << y << "," << z << "," << qx << "," << qy << "," << qz << "," << q0 << "," << isTracked << "," << timeStamp << std::endl;
-		std::cout << "bytes written: " << numBytes << std::endl;
+		//std::cout << "bytes written: " << numBytes << std::endl;
 		if (!WriteFile(serialHandle, comBuff, numBytes, &dwBytesWritten, NULL)) {
 			std::cerr << "Error! Could not write to COM1 :(" << std::endl;
 		}
