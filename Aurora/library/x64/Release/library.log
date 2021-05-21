@@ -1,25 +1,6 @@
-﻿  BufferedReader.cpp
-  CombinedApi.cpp
-  ComConnection.cpp
-  GbfButton1D.cpp
-  GbfComponent.cpp
-  GbfContainer.cpp
-  GbfData3D.cpp
-  GbfData6D.cpp
-  GbfFrame.cpp
-  GbfSystemAlert.cpp
-  PortHandleInfo.cpp
-  MarkerData.cpp
-  SystemAlert.cpp
-  SystemCRC.cpp
-  TcpConnection.cpp
-  ToolData.cpp
-  Transform.cpp
-     Creating library C:\Users\lydia\Documents\Code\WEISS-Ultrasound-Tracker\Aurora\x64\Release\library.lib and object C:\Users\lydia\Documents\Code\WEISS-Ultrasound-Tracker\Aurora\x64\Release\library.exp
+﻿     Creating library C:\Users\lydia\Documents\Code\WEISS-Ultrasound-Tracker\Aurora\x64\Release\library.lib and object C:\Users\lydia\Documents\Code\WEISS-Ultrasound-Tracker\Aurora\x64\Release\library.exp
   Generating code
-  1550 of 1561 functions (99.3%) were compiled, the rest were copied from previous compilation.
-    4 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+  All 1561 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
   library.vcxproj -> C:\Users\lydia\Documents\Code\WEISS-Ultrasound-Tracker\Aurora\x64\Release\library.dll
   library.vcxproj -> C:\Users\lydia\Documents\Code\WEISS-Ultrasound-Tracker\Aurora\x64\Release\library.pdb (Full PDB)

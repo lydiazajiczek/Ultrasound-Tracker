@@ -199,7 +199,7 @@ void getTrackingData(HANDLE serialHandle)
 
 		f = reinterpret_cast<std::uintptr_t>(ptr_out);
 		auto numBytes = f - i;
-		//std::cout << frameNumber << "," << numRigidBodies << "," << frameID << "," << x << "," << y << "," << z << "," << qx << "," << qy << "," << qz << "," << q0 << "," << isTracked << "," << timeStamp << std::endl;
+		//std::cout << "num rigid bodies:" << numRigidBodies << std::endl;
 		//std::cout << "bytes written: " << numBytes << std::endl;
 		if (!WriteFile(serialHandle, comBuff, numBytes, &dwBytesWritten, NULL)) {
 			std::cerr << "Error! Could not write to COM1 :(" << std::endl;
@@ -212,7 +212,7 @@ void getTrackingData(HANDLE serialHandle)
 /**
  * @brief Initialize and enable loaded tools. This is the same regardless of tool type.
  */
-void initializeAndEnableTools()
+int initializeAndEnableTools()
 {
 	// Initialize and enable tools
 	std::vector<PortHandleInfo> portHandles = capi.portHandleSearchRequest(PortHandleSearchRequestOption::NotInit);
@@ -222,6 +222,7 @@ void initializeAndEnableTools()
 		onErrorPrintDebugMessage("capi.portHandleInitialize()", capi.portHandleInitialize(portHandles[i].getPortHandle()));
 		onErrorPrintDebugMessage("capi.portHandleEnable()", capi.portHandleEnable(portHandles[i].getPortHandle()));
 	}
+	return portHandles.size();
 }
 
 /**
@@ -291,8 +292,6 @@ int main(int argc, char* argv[])
 		std::cerr << "Error! Could not set timeouts :(" << std::endl;
 	}
 
-	std::cout << "COM1 initialized!" << std::endl;
-
 	// Ignore argv[0], and assign the hostname and scu_hostname accordingly
 	std::string hostname = std::string(argv[1]);
 	std::string scu_hostname = (argc == 3) ? std::string(argv[2]) : "";
@@ -305,13 +304,26 @@ int main(int argc, char* argv[])
 	std::cout << "Connected to Aurora!" << std::endl;
 	sleepSeconds(1);
 	onErrorPrintDebugMessage("capi.initialize()", capi.initialize());
-	initializeAndEnableTools();
+	int numTools = initializeAndEnableTools();
+	char comBuff[20000] = { 0 };
+	char *ptr_out = comBuff;
+	std::uintptr_t i = reinterpret_cast<std::uintptr_t>(ptr_out);
+	memcpy(ptr_out, &numTools, 4);
+	ptr_out += 4;
+	std::uintptr_t f = reinterpret_cast<std::uintptr_t>(ptr_out);
+	auto numBytes = f - i;
 
-	char msg[] = "Ready to stream";
-	size_t len = strlen(msg);
+	std::cout << "Number of tools: " << numTools << std::endl;
+	//char msg[] = "Ready to stream";
+	//size_t len = strlen(msg);
+	
 	DWORD dwBytesWritten = 0;
-	if (!WriteFile(serialHandle, msg, len, &dwBytesWritten, NULL)) {
+	if (!WriteFile(serialHandle, comBuff, numBytes, &dwBytesWritten, NULL)) {
+	//if (!WriteFile(serialHandle, msg, len, &dwBytesWritten, NULL)) {
 		std::cerr << "Error! Could not write to COM1 :(" << std::endl;
+	}
+	else {
+		std::cout << "COM1 initialized!" << std::endl;
 	}
 	sleepSeconds(1);
 	getTrackingData(serialHandle);

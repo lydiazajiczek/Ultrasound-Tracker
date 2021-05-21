@@ -1,38 +1,31 @@
-c:\users\lydia\downloads\ndi_combined_api_sample_1-2-0\ndi combined api sample\library\x64\release\vc140.pdb
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\vc140.pdb
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\transform.obj
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\tooldata.obj
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\tcpconnection.obj
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\systemcrc.obj
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\systemalert.obj
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\markerdata.obj
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\porthandleinfo.obj
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\gbfsystemalert.obj
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\gbfframe.obj
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\gbfdata6d.obj
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\gbfdata3d.obj
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\gbfcontainer.obj
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\gbfcomponent.obj
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\gbfbutton1d.obj
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\comconnection.obj
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\combinedapi.obj
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\bufferedreader.obj
-c:\users\lydia\downloads\ndi_combined_api_sample_1-2-0\ndi combined api sample\x64\release\library.lib
-c:\users\lydia\downloads\ndi_combined_api_sample_1-2-0\ndi combined api sample\x64\release\library.exp
-c:\users\lydia\od\documents\code\c++\aurora\x64\release\library.lib
-c:\users\lydia\od\documents\code\c++\aurora\x64\release\library.exp
-c:\users\lydia\downloads\ndi_combined_api_sample_1-2-0\ndi combined api sample\x64\release\library.dll
-c:\users\lydia\downloads\ndi_combined_api_sample_1-2-0\ndi combined api sample\x64\release\library.ipdb
-c:\users\lydia\downloads\ndi_combined_api_sample_1-2-0\ndi combined api sample\x64\release\library.iobj
-c:\users\lydia\downloads\ndi_combined_api_sample_1-2-0\ndi combined api sample\x64\release\library.pdb
-c:\users\lydia\od\documents\code\c++\aurora\x64\release\library.dll
-c:\users\lydia\od\documents\code\c++\aurora\x64\release\library.ipdb
-c:\users\lydia\od\documents\code\c++\aurora\x64\release\library.iobj
-c:\users\lydia\od\documents\code\c++\aurora\x64\release\library.pdb
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\library.tlog\cl.command.1.tlog
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\library.tlog\cl.read.1.tlog
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\library.tlog\cl.write.1.tlog
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\library.tlog\library.write.1u.tlog
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\library.tlog\link.command.1.tlog
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\library.tlog\link.read.1.tlog
-c:\users\lydia\od\documents\code\c++\aurora\library\x64\release\library.tlog\link.write.1.tlog
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\vc140.pdb
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\transform.obj
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\tooldata.obj
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\tcpconnection.obj
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\systemcrc.obj
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\systemalert.obj
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\markerdata.obj
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\porthandleinfo.obj
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\gbfsystemalert.obj
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\gbfframe.obj
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\gbfdata6d.obj
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\gbfdata3d.obj
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\gbfcontainer.obj
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\gbfcomponent.obj
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\gbfbutton1d.obj
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\comconnection.obj
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\combinedapi.obj
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\bufferedreader.obj
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\x64\release\library.lib
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\x64\release\library.exp
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\x64\release\library.dll
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\x64\release\library.ipdb
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\x64\release\library.iobj
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\x64\release\library.pdb
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\library.tlog\cl.command.1.tlog
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\library.tlog\cl.read.1.tlog
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\library.tlog\cl.write.1.tlog
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\library.tlog\library.write.1u.tlog
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\library.tlog\link.command.1.tlog
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\library.tlog\link.read.1.tlog
+c:\users\lydia\documents\code\weiss-ultrasound-tracker\aurora\library\x64\release\library.tlog\link.write.1.tlog
